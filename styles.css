@@ -1,0 +1,106 @@
+/* Basic styles for the plant care app */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfb;
+    color: #333;
+}
+
+header {
+    background-color: #4a7f4d;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+section {
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Plant grid layout */
+.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.plant-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.plant-card:focus,
+.plant-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    outline: none;
+}
+
+.plant-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.plant-card h3 {
+    margin: 0;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+}
+
+.plant-card .details {
+    display: none;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    background-color: #fafafa;
+    border-top: 1px solid #eee;
+}
+
+.plant-card .details p {
+    margin-top: 0.5rem;
+}
+
+/* Calendar table styles */
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.calendar th,
+.calendar td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+.calendar th {
+    background-color: #e8f5e9;
+}
+
+.calendar tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
