@@ -16,6 +16,34 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Tab toggling for outdoor and indoor sections
+    const tabOutdoor = document.getElementById('tab-outdoor');
+    const tabIndoor = document.getElementById('tab-indoor');
+    const outdoorSection = document.getElementById('outdoor-plants');
+    const indoorSection = document.getElementById('indoor-plants');
+    const calendarSection = document.getElementById('calendar-section');
+
+    function showOutdoor() {
+        outdoorSection.classList.remove('hidden');
+        indoorSection.classList.add('hidden');
+        calendarSection.classList.remove('hidden');
+        tabOutdoor.classList.add('active');
+        tabIndoor.classList.remove('active');
+    }
+
+    function showIndoor() {
+        indoorSection.classList.remove('hidden');
+        outdoorSection.classList.add('hidden');
+        calendarSection.classList.add('hidden');
+        tabIndoor.classList.add('active');
+        tabOutdoor.classList.remove('active');
+    }
+
+    if (tabOutdoor && tabIndoor) {
+        tabOutdoor.addEventListener('click', showOutdoor);
+        tabIndoor.addEventListener('click', showIndoor);
+    }
 });
 
 /**

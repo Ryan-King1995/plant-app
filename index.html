@@ -14,9 +14,15 @@
         <p>Click on any plant to see its preferred growing conditions and care tips.  A simple calendar shows when each plant is at its best.</p>
     </header>
 
-    <!-- Plant cards section -->
-    <section id="plants">
-        <h2>Plant Collection</h2>
+    <!-- Tab navigation for outdoor vs indoor plants -->
+    <nav class="tabs">
+        <button id="tab-outdoor" class="active" type="button">Outdoor Plants</button>
+        <button id="tab-indoor" type="button">Indoor Plants</button>
+    </nav>
+
+    <!-- Outdoor plant cards section -->
+    <section id="outdoor-plants">
+        <h2>Outdoor Plant Collection</h2>
         <div class="plant-grid">
             <!-- Each plant card contains an image, name and hidden details.  Details are shown when the card is clicked. -->
             <!-- Asiatic Lily -->
@@ -182,8 +188,85 @@
         </div>
     </section>
 
+    <!-- Indoor plant cards section (hidden by default) -->
+    <section id="indoor-plants" class="hidden">
+        <h2>Indoor Plant Collection</h2>
+        <div class="plant-grid">
+            <!-- Monstera deliciosa -->
+            <div class="plant-card" tabindex="0">
+                <img src="images/indoor_monstera.jpg" alt="Monstera deliciosa">
+                <h3>Monstera deliciosa</h3>
+                <div class="details">
+                    <p><strong>Location:</strong> Bright but filtered light and warm temperatures (18–25°C). Use an open, well‑drained slightly acidic compost and provide a support pole.</p>
+                    <p><strong>Care:</strong> Water when the compost is almost dry, using rainwater or filtered water. Mist the foliage or stand the pot on a tray of damp pebbles to raise humidity. Feed monthly from spring to autumn and wipe leaves to remove dust.</p>
+                    <p><strong>Post‑season:</strong> Remove yellow or damaged leaves and prune back long vines in spring. Repot when roots fill the pot.</p>
+                </div>
+            </div>
+            <!-- Areca palm -->
+            <div class="plant-card" tabindex="0">
+                <img src="images/indoor_areca_palm.jpg" alt="Areca palm">
+                <h3>Areca palm</h3>
+                <div class="details">
+                    <p><strong>Location:</strong> Bright, indirect light in a warm room (18–24°C) away from draughts. Grow in a soil‑based, well‑draining compost and keep the plant snug in its pot.</p>
+                    <p><strong>Care:</strong> Water thoroughly when the top few centimetres of compost dry out, using rainwater if possible. Mist leaves or place the pot on a tray of moist pebbles to increase humidity. Feed every couple of months during the growing season.</p>
+                    <p><strong>Post‑season:</strong> Trim brown or yellowing fronds and repot in spring only when the roots fill the pot.</p>
+                </div>
+            </div>
+            <!-- Lipstick plant -->
+            <div class="plant-card" tabindex="0">
+                <img src="images/indoor_lipstick_plant.jpg" alt="Lipstick plant">
+                <h3>Lipstick plant</h3>
+                <div class="details">
+                    <p><strong>Location:</strong> Bright, indirect light with a few hours of winter sun. Provide high humidity and a loose, slightly acidic, well‑draining compost similar to orchid mix.</p>
+                    <p><strong>Care:</strong> Keep the soil evenly moist, allowing the top couple of centimetres to dry out between waterings. Water from the bottom with lukewarm, low‑lime water and remove excess after 15&nbsp;minutes. Feed every three to four weeks in spring and summer. Mist regularly or use a pebble tray to maintain humidity.</p>
+                    <p><strong>Post‑season:</strong> Remove faded stems and cut back long shoots in spring to maintain shape. Repot only every few years to avoid disturbing flower buds.</p>
+                </div>
+            </div>
+            <!-- Mistletoe cactus -->
+            <div class="plant-card" tabindex="0">
+                <img src="images/indoor_mistletoe_cactus.png" alt="Mistletoe cactus">
+                <h3>Mistletoe cactus</h3>
+                <div class="details">
+                    <p><strong>Location:</strong> Bright, indirect light; tolerates a little morning or evening sun. Grow in a peat‑free cactus compost and keep slightly pot‑bound.</p>
+                    <p><strong>Care:</strong> Water more frequently than desert cacti: in bright light, water thoroughly and allow the top of the compost to dry between waterings; in shade, keep the compost just damp. Reduce watering in winter. Average room humidity is fine, but mist the plant when the air is dry.</p>
+                    <p><strong>Post‑season:</strong> Pruning is rarely needed; trim back any overly long stems to maintain the plant’s shape. Repot every three to four years.</p>
+                </div>
+            </div>
+            <!-- Striped Calathea -->
+            <div class="plant-card" tabindex="0">
+                <img src="images/indoor_calathea.png" alt="Striped calathea">
+                <h3>Striped Calathea</h3>
+                <div class="details">
+                    <p><strong>Location:</strong> Bright but indirect light; north‑ or east‑facing windows in summer and a brighter spot in winter. Keep the plant warm (16–21°C) and away from draughts.</p>
+                    <p><strong>Care:</strong> Maintain high humidity by misting or standing the pot on a tray of damp gravel. Water moderately in spring and summer to keep the compost evenly moist; allow the surface to dry slightly in autumn and winter. Use rainwater or filtered water and feed monthly from April to September.</p>
+                    <p><strong>Post‑season:</strong> Remove any brown or damaged leaves and divide the plant in spring if it becomes congested. Repot when necessary.</p>
+                </div>
+            </div>
+            <!-- English ivy -->
+            <div class="plant-card" tabindex="0">
+                <img src="images/indoor_hedra_helix.png" alt="English ivy">
+                <h3>English ivy</h3>
+                <div class="details">
+                    <p><strong>Location:</strong> Medium to bright indirect light in a cool spot (10–21°C). Avoid direct sun and dry air.</p>
+                    <p><strong>Care:</strong> Water when the top centimetre of compost dries out and allow excess water to drain. Mist regularly or stand the pot on pebbles in water to increase humidity. Feed lightly during the growing season.</p>
+                    <p><strong>Post‑season:</strong> Trim any long or straggly stems to keep the plant tidy and remove discoloured leaves. Repot or refresh the compost every couple of years.</p>
+                </div>
+            </div>
+            <!-- Dieffenbachia compacta -->
+            <div class="plant-card" tabindex="0">
+                <img src="images/indoor_dieffenbachia.png" alt="Dieffenbachia compacta">
+                <h3>Dieffenbachia compacta</h3>
+                <div class="details">
+                    <p><strong>Location:</strong> Bright, indirect light; avoid direct sun. Use a fertile, well‑draining potting mix rich in peat or coir and keep away from cold drafts.</p>
+                    <p><strong>Care:</strong> Water when the top two centimetres of soil feel dry, providing regular moisture but never allowing the soil to become waterlogged. Average household temperatures and humidity are sufficient, although slightly higher humidity is appreciated. Feed every four to six weeks in the growing season.</p>
+                    <p><strong>Post‑season:</strong> Remove yellowing leaves and wipe dust from foliage. Repot when the plant outgrows its pot and trim tall stems to encourage bushier growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Seasonal calendar section -->
-    <section id="calendar">
+    <section id="calendar-section">
         <h2>Seasonal Colour Calendar</h2>
         <table class="calendar">
             <thead>
